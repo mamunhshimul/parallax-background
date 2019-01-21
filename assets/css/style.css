@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
+/*=========== header css ===========*/
+#header-area{}
+.navbar-survival101 {
+  background-color:#2B6DAD;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: #fff;
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .7rem;
+    padding-left: .7rem;
+  }
+  /*=========== slider css ===========*/
+#slider-area{
+  margin    :6% 0 9% 0; 
+  min-height: 100vh;
+  background-size      : cover;
+  background-attachment: fixed;
+  background-repeat    : no-repeat;
+  background-position  : center center;
+}
+.cd-fixed-bg.cd-fixed-bg--1 {
+   background-image: url("../images/slider.jpg");
+   background-size: cover;
+   position: relative;
+   z-index: 1;
+   color: #fff;
+  }
+.cd-fixed-bg.cd-fixed-bg--1:after{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;  
+    opacity: .8;
+    z-index: -1;
+ }
+.cd-scrolling-bg {
+  min-height: 100%;
+}
+  /*=========== header css ===========*/
+  /*=========== header css ===========*/
