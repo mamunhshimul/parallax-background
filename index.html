@@ -16,44 +16,56 @@
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
   <link rel="stylesheet" href="assets/css/style.css">
+  <script type="text/javascript" src="rellax.min.js"></script>
 </head>
 
 <body> 
-  <section id="header-area">
-       <nav class="navbar navbar-expand-lg navbar-dark navbar-survival101">
-  <div class="container">
-     <a class="navbar-brand" href="#">
-       <h1>MAMUN</h1>
-     </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"></span>
-     </button>
-
-  <div class="collapse navbar-collapse" id="navbarColor02">
-      <ul class="navbar-nav ml-auto">
-        <li><a class="nav-link" href="#">Fundamentals</a></li>
-        <li><a class="nav-link" href="#">Health</a></li>
-        <li><a class="nav-link" href="#">Trending</a></li>
-        <li><a class="nav-link" href="#">More</a></li>
-      </ul>
-  
-    </div>
-  </div>
-    
-</nav>
-  </section>
+ 
   <!--================================================================
                           End header-area
    ====================================================================-->
   <section id="slider-area">
-   <main>
-   <div class="cd-fixed-bg cd-fixed-bg--1">
-    <div class="container text-center">
-   
-    </div><!--/.container-->
+    <div class="rellax d1">
+    <img src ="assets/images/big_stars.png">
+     I’m slow and smooth
    </div> 
- </main>
-</section>
+   <div class="rellax d2" data-rellax-speed="5">
+    <img src="assets/images/big_stars.png">
+    I’m extra slow and smooth
+   </div>
+   <div class="rellax d3" data-rellax-speed="2">
+    I’m extra slow and smooth
+    <img src="assets/images/big_stars.png" width="18%">
+   </div>
+   <div class="rellax d4" data-rellax-speed="-6">
+    I’m extra slow and smooth
+    <img src="assets/images/big_stars.png" width="17%">
+   </div>
+   <div class="rellax d5" data-rellax-speed="4">
+    I’m extra slow and smooth
+    <img src="assets/images/big_stars.png" width="16%">
+   </div>
+   <div class="rellax d6" data-rellax-speed="10">
+    I’m extra slow and smooth
+    <img src="assets/images/big_stars.png" width="15%">
+   </div>
+   <div class="rellax d7" data-rellax-speed="10">
+    I’m extra slow and smooth
+    <img src="assets/images/big_stars.png" width="10%">
+   </div>
+   <div class="rellax d8" data-rellax-speed="10">
+    I’m extra slow and smooth
+    <img src="assets/images/big_stars.png" width="7%">
+   </div>
+   <div class="rellax d9" data-rellax-speed="15">
+    I’m extra slow and smooth
+    <img src="assets/images/big_stars.png" width="5%">
+   </div>
+
+  </section>
+  <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odio impedit, ipsa fugiat voluptatibus molestiae incidunt nihil itaque quaerat similique non architecto a veniam. Perferendis inventore deserunt, debitis accusantium esse. Nostrum reprehenderit aliquid cupiditate distinctio quibusdam voluptatum excepturi ab aut explicabo, impedit sapiente libero aliquam necessitatibus eos provident molestiae culpa.</h1>
+ 
+ 
   <!--================================================================
                           End slider-area
    ====================================================================-->                          
@@ -67,6 +79,13 @@
 
  
   <!--=====java sscript here =========-->
+  <script type="text/javascript">
+    var rellax = new Rellax('.rellax',{
+      callback: function(position){
+
+      }
+    })
+  </script>
 </body>
 
 </html>
