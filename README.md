@@ -1,1 +1,1 @@
-# parallax-background
+# parallax-effect
