@@ -13,7 +13,7 @@ var parlx = function(e, target, parent, movement) {
   }
 
 function offset(el) {
-	
+
     var rect = el.getBoundingClientRect(),
 
         scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
@@ -30,3 +30,42 @@ document.querySelector(".header").addEventListener("mousemove", function(e) {
 
 
 })
+
+
+
+/*
+section 1 effect
+---------------*/
+
+
+
+
+
+const parallaxes = document.querySelectorAll('.parallax');
+
+// Interpolation formula.
+const calculateRangeValue = ( omin, omax, nmin, nmax, ovalue) => {
+  const oRange = omax - omin;
+  const nRange = nmax - nmin;
+  
+  return ((ovalue - omin) * nRange / oRange) + nmin;
+}
+
+window.addEventListener('scroll', () => {
+
+  const scrollTop = window.scrollY;
+
+  parallaxes.forEach(parallax => {
+    if((scrollTop + window.innerHeight / 2) > parallax.offsetTop) {
+      const oldMin = 
+            (parallax.offsetTop < window.innerHeight / 4) ?
+              parallax.offsetTop 
+              :
+              parallax.offsetTop - window.innerHeight / 4;
+
+      const oldMax = oldMin + parallax.offsetHeight;
+      const yPosition = calculateRangeValue(oldMin, oldMax, 0, -50, scrollTop);
+      parallax.style.backgroundPosition = `center ${yPosition}px`;
+    }    
+  });
+});
