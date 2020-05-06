@@ -1,4 +1,4 @@
- 
+  
  body, h1, p{
     margin: 0;
     padding: 0;
@@ -43,7 +43,7 @@ header{
     position: relative;
     display: inline-block;
     margin: 0 10px;
-    padding: 10px 22px;
+    padding: 10px 40px;
     color: white;
     border: 1px solid white;
     text-decoration: none;
@@ -51,8 +51,7 @@ header{
     border-radius: 20px;
 }
 
- 
-
+  
 .btn:hover {
  
 }
@@ -111,3 +110,8 @@ footer h2{
   margin: 0 auto;
   color: #ffffff;
 }
+
+
+
+
+ 

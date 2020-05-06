@@ -1,4 +1,6 @@
-
+/*
+text moving when mouse move
+--------------------------------*/ 
 
 var parlx = function(e, target, parent, movement) {
 
@@ -39,8 +41,6 @@ section 1 effect
 
 
 
-
-
 const parallaxes = document.querySelectorAll('.parallax');
 
 // Interpolation formula.
@@ -64,7 +64,7 @@ window.addEventListener('scroll', () => {
               parallax.offsetTop - window.innerHeight / 4;
 
       const oldMax = oldMin + parallax.offsetHeight;
-      const yPosition = calculateRangeValue(oldMin, oldMax, 0, -50, scrollTop);
+      const yPosition = calculateRangeValue(oldMin, oldMax, 0, -500, scrollTop);
       parallax.style.backgroundPosition = `center ${yPosition}px`;
     }    
   });
